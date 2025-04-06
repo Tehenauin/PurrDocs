@@ -100,7 +100,7 @@ protected override void SetUnityState(MyState state)
 
 **Note**
 
-* Internally `GetUnityState` `gets called after Physics Pass (and therefore after every `Simulate` too).
+* Internally `GetUnityState` gets called after physics pass (and therefore after every `Simulate` too).
 * `SetUnityState`gets called after reconciliation.
 
 ***
