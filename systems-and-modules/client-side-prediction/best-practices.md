@@ -98,6 +98,11 @@ protected override void SetUnityState(MyState state)
 
 * These methods ensure that Unity components are properly synchronized with the `STATE`, maintaining consistency during prediction and reconciliation.
 
+**Note**
+
+* Internally `GetUnityState` `gets called after Physics Pass (and therefore after every `Simulate` too).
+* `SetUnityState`gets called after reconciliation.
+
 ***
 
 **5. Make `SerializeField` Constants Only**
